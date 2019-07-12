@@ -23,7 +23,9 @@ class School
   end
   
   def sort
-    @roster.values.sort!
+    @roster.values.each do |students|
+      students.sort!
+    end
   end
   
 end
